@@ -2,33 +2,33 @@ def euklid_ggT(n: int, a: int) -> int:
     if a > n:
         return euklid_ggT(a, n)
 
-	if a == 0 or n == 0:
-		return 0
+    if a == 0 or n == 0:
+        return 0
 
-	while a != 0:
-		a, n = n % a, a
+    while a != 0:
+        a, n = n % a, a
 
-	return n
+    return n
 
 
 def extended_euklid(n: int, a: int):
-	c: int
-	d: int
-	uc: int
-	vc: int
-	ud: int
-	vd: int
-	q: int
+    c: int
+    d: int
+    uc: int
+    vc: int
+    ud: int
+    vd: int
+    q: int
 
-	c, d = a, n
-	uc, vc, ud, vd = 1, 0, 0, 1
+    c, d = a, n
+    uc, vc, ud, vd = 1, 0, 0, 1
 
-	while c != 0:
-		q = int(d/c)
-		c, d = d - q * c, c
-		uc, vc, ud, vd = ud - q * uc, vd - q * vc, uc, vc
+    while c != 0:
+        q = int(d/c)
+        c, d = d - q * c, c
+        uc, vc, ud, vd = ud - q * uc, vd - q * vc, uc, vc
 
-	k, v, u = d, vd, ud
+    k, v, u = d, vd, ud
 
     return k, v, u
 
