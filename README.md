@@ -1,4 +1,4 @@
-# algorithms
+# Algorithms
 Various algorithms implemented in Python (mostly based on my interests)
 
 ## Current
