@@ -2,8 +2,8 @@ def euklid_ggT(n: int, a: int) -> int:
     if a > n:
         return euklid_ggT(a, n)
 
-	if a == 0:
-		return n
+	if a == 0 or n == 0:
+		return 0
 
 	while a != 0:
 		a, n = n % a, a
