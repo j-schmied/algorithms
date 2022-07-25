@@ -1,0 +1,25 @@
+from Node import Node
+
+
+def inorder_traversal(root_node: Node):
+    if root_node is None:
+        return
+
+    inorder(root_node.left_child())
+    print(root_node.value())
+    inorder(root_node.right_child())
+
+
+def main():
+    root = Node(10)
+    root.add_left_child = Node(5)
+    root.add_right_child = Node(15)
+
+    inorder_traversal(root)
+
+    exit(0)
+
+
+if __name__ == '__main__':
+    main()
+
