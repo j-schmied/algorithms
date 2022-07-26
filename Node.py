@@ -1,18 +1,14 @@
-from typing import Generic, TypeVar
-
-Node = TypeVar('Node', bound='Node')
-
-class Node(Generic[Node]):
-    def __init__(self, value: int, left_child: Node = None, right_child: Node = None):
-        self._left_child: Node = left_child
-        self._right_child: Node = right_child
+class Node():
+    def __init__(self, value: int, left_child=None, right_child=None):
+        self._left_child = left_child
+        self._right_child = right_child
         self._value = value
 
-    def add_left_child(self, left: Node):
+    def add_left_child(self, left):
         if self._left_child == None:
             self._left_child = left
 
-    def add_right_child(self, right: Node):
+    def add_right_child(self, right):
         if self._right_child == None:
             self._right_child = right
 
@@ -33,9 +29,9 @@ class Node(Generic[Node]):
         return self._value
 
     @property
-    def left_child(self) -> Node:
+    def left_child(self):
         return self._left_child
 
     @property
-    def right_child(self) -> Node:
+    def right_child(self):
         return self._right_child
