@@ -14,7 +14,7 @@ class Edge:
 class Graph(object):
     def __init__(self):
         self._vertices: list = list()
-        self._edges:list = list()
+        self._edges: list = list()
         self._adjacency_list: dict = dict()
         self._adjacency_matrix: list = list()
         self._counter = 0
@@ -58,4 +58,3 @@ class Graph(object):
     @staticmethod
     def _create_vertex(value: int) -> Vertex:
         return Vertex(value)
-

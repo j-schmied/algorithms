@@ -1,4 +1,4 @@
-import Node
+from Node import Node
 
 
 def inorder_traversal(root_node):
@@ -11,9 +11,9 @@ def inorder_traversal(root_node):
 
 
 def main():
-    root = Node.Node(10)
-    root.add_left_child = Node.Node(5)
-    root.add_right_child = Node.Node(15)
+    root = Node(10)
+    root.add_left_child(Node(5))
+    root.add_right_child(Node(15))
 
     inorder_traversal(root)
 
@@ -22,4 +22,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

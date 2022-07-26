@@ -20,7 +20,7 @@ def turtoise_and_hare(number_list: list):
 
 
 def main():
-    numbers = [1, 3, 4, 5, 3, 7 ,8]
+    numbers = [1, 3, 4, 5, 3, 7, 8]
 
     print(turtoise_and_hare(numbers))
 
@@ -29,4 +29,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

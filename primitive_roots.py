@@ -1,9 +1,10 @@
 from sys import argv
 
+
 def is_primitive_root(a: int, p: int) -> bool:
     results: set = set()
 
-    for i in range (0, p-1):
+    for i in range(0, p-1):
         results.add(a**i % p)
 
     results = sorted(results)
@@ -18,7 +19,7 @@ def is_primitive_root(a: int, p: int) -> bool:
     return True
 
 
-def is_discrete_log(a: int, p: int, x:int) -> bool:
+def is_discrete_log(a: int, p: int, x: int) -> bool:
     y: int = a**x % p
 
     if y < p:
@@ -38,4 +39,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

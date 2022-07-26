@@ -34,18 +34,17 @@ def extended_euklid(n: int, a: int):
 
 
 def main():
-	a: int = 3
-	b: int = 6
-	c: int = 17
+    a: int = 3
+    b: int = 6
+    c: int = 17
 
-	print(euklid_ggT(a, b))
-	print(euklid_ggT(b, c))
+    print(euklid_ggT(a, b))
+    print(euklid_ggT(b, c))
 
-	print(extended_euklid(c, a))
+    print(extended_euklid(c, a))
 
-	exit(0)
+    exit(0)
 
 
 if __name__ == '__main__':
-	main()
-
+    main()
